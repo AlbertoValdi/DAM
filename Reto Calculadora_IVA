@@ -1,0 +1,41 @@
+/* Realiza una calculadora de IVA. para ello se deberán seguir la siguiente
+secuencia de acciones:
+    a. Se pedirá al usuario que introduzca por consola un valor numérico (el
+    precio de adquisición de un artículo (sin IVA)) y también se le pedirá que
+    introduzca otro valor numérico (el IVA que se le ha aplicado).
+
+    b. El sistema calculará el precio del producto tanto sin IVA como con él.
+
+    c. Finalmente se mostrarán ambos precios formateados.
+*/
+
+package Calculadora_IVA;
+
+import java.util.Scanner;
+
+public class Calculadora {
+
+    public static void main(String[] args){
+
+        double precio_base;
+        double iva_porcentaje;
+        double iva;
+        double total;
+
+        Scanner scn = new Scanner(System.in);
+
+        System.out.println("Introduzca el precio base del artículo, por favor: ");
+        precio_base = scn.nextDouble();
+
+        System.out.println("Introduzca el % de IVA aplicado: ");
+        iva_porcentaje = scn.nextDouble();
+
+        iva = (precio_base * iva_porcentaje) / 100;
+        total = precio_base + iva;
+
+        System.out.println("Base imponible: "+precio_base+" €");
+        System.out.printf("IVA aplicado: %.2f €%n",iva);
+        System.out.printf("Valor Total: %.2f €",total);
+
+    }
+}
