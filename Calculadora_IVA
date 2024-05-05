@@ -1,14 +1,3 @@
-/* Realiza una calculadora de IVA. para ello se deberán seguir la siguiente
-secuencia de acciones:
-    a. Se pedirá al usuario que introduzca por consola un valor numérico (el
-    precio de adquisición de un artículo (sin IVA)) y también se le pedirá que
-    introduzca otro valor numérico (el IVA que se le ha aplicado).
-
-    b. El sistema calculará el precio del producto tanto sin IVA como con él.
-
-    c. Finalmente se mostrarán ambos precios formateados.
-*/
-
 package Calculadora_IVA;
 
 import java.util.Scanner;
