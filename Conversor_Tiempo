@@ -1,15 +1,3 @@
-/* Realiza un conversor de tiempo, para ello se deberán seguir la siguiente
-secuencia de acciones:
-    a. Se le pedirá al usuario introducir una cantidad numérica (que representará
-    los segundo)
-
-    b. el programa calculará las horas minutos y segundo correspondiente a la
-    cantidad introducida
-
-    c. La aplicación sacar por consola la cantidad de horas minutos y segundos
-    calculados
-*/
-
 package conversor_tiempo;
 
 import java.util.Scanner;
